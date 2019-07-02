@@ -1,20 +1,102 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<nav class="navbar navbar-dark bg-dark">
+  <h6 class="navbar-brand">XPRMNT</h6>
+  <h6 class="navbar-brand">by Cakeink</h6>
+</nav>
+<div class="jumbotron">
+  <img src="/assets/img/logo.png">
+  <h1 class="display-4">It's <b>The</b> Generator for Images!</h1>
+  <p class="lead">The <b>best</b> image generator is now free! </p>
+  <hr class="my-4">
+  <form>
+    <div class="form-row">
+      <div class="col-auto">
+        <label class="sr-only" for="inlineFormInputGroupY">Y</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Y Scale</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupY" placeholder="e.g. 100">
+        </div>
+      </div>
+      <div class="col-auto">
+        <label class="sr-only" for="inlineFormInputGroupX">X</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">X Scale</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupX" placeholder="e.g. 100">
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-auto">
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="Red">
+          <label class="form-check-label" for="autoSizingCheck">
+            Red
+          </label>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="Green">
+          <label class="form-check-label" for="autoSizingCheck">
+            Green
+          </label>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="Blue">
+          <label class="form-check-label" for="autoSizingCheck">
+            Blue
+          </label>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+          <label class="form-check-label" for="autoSizingCheck">
+            Black / White
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-auto">
+        <label class="sr-only" for="inlineFormInputGroupFilename">Filename</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Filename</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupFilename"
+                 placeholder="e.g. Wonderful_Image_3">
+        </div>
+      </div>
+      <div class="form-group">
+        <select id="inputState" class="form-control">
+          <option selected>.png</option>
+          <option>.jpg</option>
+          <option>.bmp</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <button type="submit" class="btn btn-primary mb-2">Generate</button>
+    </div>
+  </form>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="card m-3" style="width: 18rem;">
+  <img src="/assets/img/logo.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4>FILENAME</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      content.</p>
+    <div class="form-row">
+      <button type="submit" class="btn btn-primary mb-2 m-1">Download</button>
+      <button type="submit" class="btn btn-danger mb-2 m-1">Delete</button>
+    </div>
+  </div>
+</div>
 
